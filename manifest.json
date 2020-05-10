@@ -1,0 +1,25 @@
+{
+    "name": "Qaptured Netflix Ratings",
+    "version": "1.0",
+    "description": "Qaptured Netflix Ratings",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.netflix.com/*"
+            ],
+            "css": [
+                "styles.css"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "activeTab"
+    ],
+    "icons": {
+        "128": "logo.png"
+    },
+    "manifest_version": 2
+}
